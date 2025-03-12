@@ -59,14 +59,10 @@ const Work = ({isDarkMode}) => {
           ))}
         </motion.div>
 
-        <motion.a
-          initial={{opacity: 0}}
-          whileInView={{opacity: 1}}
-          transition={{delay:1.1 , duration:0.5}}
-          href="" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-4 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'>
+        <a href="https://www.canva.com/design/DAGhTzd5Ua0/e7cCUzOrzAL1II80TQqyrQ/edit?utm_content=DAGhTzd5Ua0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-4 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'>
             Show more 
             <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt='right arrow' className='w-4' />
-        </motion.a>
+        </a>
     </motion.div>
   )
 }
